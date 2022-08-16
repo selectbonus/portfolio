@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://kit.fontawesome.com/5d63dd64d8.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+    * {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Esteban;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+a {
+  font-family: Montserrat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+Header {
+  background: #5577aa;
+  width: 100%;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 2px #0000004D
+}
+
+Nav {
+  display: flex;
+  justify-content: right;
+}
+
+li {
+  display: inline-block;
+  padding: 2px 20px
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+  font-size: 160%
+}
+
+.navlink:hover {
+  background: #101010;
+  color: #5577aa;
+  padding: 13px 6px
+}
+/* Navbar */
+
+/*Welcome Section */
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #303030, #101010);
+  margin-top: -27x
+}
+
+.welcome {
+  color: #FAF9F6;
+  text-align: center;
+  padding: 130px 0;
+}
+
+.welcome-h1 {
+  font-size: 300%
+}
+
+.welcome-p {
+  font-size: 200%;
+  margin-top: -30px;
+  font-weight: 100;
+  color: #5577AA;
+}
+/*Welcome Section*/
+
+/*Projects Section*/
+#projects {
+  width: 100%;
+  height: auto;
+  background: #B45B5B;
+  margin-top: -40px;
+}
+
+.projects-h1 {
+  color: white;
+  text-align: center;
+  width: 75%;
+  font-size: 300%;
+  margin: 0 auto;
+  padding: 70px 0 5px 0;
+  border-bottom: solid 2px white
+}
+
+.projects-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.project {
+  width: 80%;
+  height: auto;
+  background: #7d3f3f;
+  margin-bottom: 40px;
+}
+
+.project-img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-tile {
+  text-align: center;
+  font-size: 120%;
+}
+
+#projects a {
+  text-decoration: none;
+  color: white;
+}
+/*Projects Section*/
+
+/*Contact Section*/
+#contact {
+  background: #7d3f3f;
+  margin-top: -80px;
+}
+
+.contact-h1 {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  font-size: 300%;
+  }
+
+  .contact-links {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .contact-links a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+  }
+
+  .contact-links i {
+    padding-right: 8px;
+  }
+  /*Contact Section*/
+  
+  /*Footer*/
+  footer {
+    background: #7d3f3f;
+    height: 70px;
+    border-top: solid 4px #5577aa;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 25px 0;
+    color: white;
+    font-size: 115%
+  }
+  /*Footer*/
+
+  @media (max-width:500px) {
+    /*header*/
+    header {
+      height: auto;
+    }
+    nav {
+      justify-content: center;
+      margin: 0px 20px 0 0;
+    }
+    li {
+      display: inline-block;
+      padding: 5px 8px;
+      text-align: center;
+    }
+
+    .navlink:hover {
+      padding: 7px;
+    }
+    /*header*/
+
+    /*Welcome Section*/
+    .welcome-h1 {
+      font-size: 180%
+    }
+
+    .welcome-p {
+      font-size: 140%;
+      padding-top: 10px;
+    }
+    /*Welcome Section*/
+    
+    /*Projects Section*/
+    .projects-h1 {
+      font-size: 140%;
+    }
+    
+    
+    .projects-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px auto 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+    /*Contact Section*/
+    .contact-h1 {
+      font-size: 180%;
+      padding-bottom: 50px;
+    }
+
+    .contact-links a {
+      display: block;
+      padding-bottom: 20px;
+    }
+    /*Contact Section*/
+  }
+  </style>
+</hdead>
+<body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section" class="navlink">About</a></li>
+          <li><a href="#projects" class="navlink">Work</a></li>
+          <li><a href="#contact" class="navlink">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <div class="welcome">
+          <h1 class="welcome-h1">Welcome to my portfolio</h1>
+          <p class="welcome-p">My name is Logan</p>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="projects-h1">Here are some of my projects</h1>
+        <div class="projects-grid">
+          <div class="project">
+          <a href="https://codepen.io/SelectBonus/full/KKoZXQq" target="_blank"><a href="https://ibb.co/ryf2tV9"><img src="https://i.ibb.co/4NgRfHk/Technical-Documentation-Screencap.jpg" alt="Technical Documentation" border="0" class="project-img" /><p class="project-tile">Technical Documentation Page</p></a>
+          </div>
+          <div class="project">
+          <a href="https://codepen.io/SelectBonus/full/abYKOpZ" target="_blank"><img src="https://i.ibb.co/09RVgKM/Product-Landing-Page-Screencap.jpg" alt="Product Landing Page" border="0" class="project-img" /><p class="project-tile">Product Landing Page</p></a>
+          </div>
+          <div class="project">
+            <a href="https://codepen.io/SelectBonus/full/PoRJbxK" target="_blank"><img src="https://i.ibb.co/4j7Ctt1/Nathan-Fielder-Tribute-Screencap.jpg" alt="Nathan Fielder Tribute Page" border="0" class="project-img"><p class="project-tile">Tribute Page</p></a>
+         </div>
+         <div class="project">
+           <a href="https://codepen.io/SelectBonus/full/ZExRQbR" target="_blank"><img src="https://i.ibb.co/p1yjdcD/Survey-Page-Screencap.jpg" alt="Survey Form" border="0" class="project-img"><p class="project-tile">Survey Form</p></a>
+         </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="contact-h1">Let's work together</h1>
+        <div class="contact-links">
+          <a id="profile-link" href="https://github.com/selectbonus/" target="_blank"><i class="fab fa-github"></i>Github</a>
+          <a id="profile-link" href="https://codepen.io/SelectBonus" target="_blank"><i class="fa-brands fa-codepen"></i>Codepen</a>
+          <a id="profile-link" href="https://www.freecodecamp.org/SelectBonus" target="_blank"><i class="fa-brands fa-free-code-camp"></i>freeCodeCamp</a>
+        </div>
+      </section>
+      <footer>
+        <p>Thanks for visiting!</p>
+      </footer>
+  </body>
